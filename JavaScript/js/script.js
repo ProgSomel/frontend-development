@@ -1,9 +1,6 @@
+//? Select button
+const button = document.getElementById("btn");
+button.addEventListener("click", hello)
 function hello(){
-    //? Anonymous Function
-    return ()=>{
-        console.log("Hello World");
-    }
+    console.log("Hello World");
 }
-
-let value = hello();
-value()
