@@ -1,6 +1,9 @@
 function hello(){
-    console.log("Hello world");
+    //? Anonymous Function
+    return ()=>{
+        console.log("Hello World");
+    }
 }
 
-let msg = hello();
-console.log(msg);
+let value = hello();
+value()
