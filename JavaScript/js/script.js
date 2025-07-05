@@ -1,5 +1,3 @@
-const arr = [10, 20];
-const [x, , y = 30] = arr;
+let lang = "Python";
 
-console.log(x); // 10
-console.log(y); // 30 (because the third element is missing)
+console.log(lang ?? "JavaScript"); //? Python
