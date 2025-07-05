@@ -1,4 +1,5 @@
-const a = 6;
+const arr = [10, 20];
+const [x, , y = 30] = arr;
 
-const result = a%2 === 0 ? 'Even' : 'Odd';
-console.log(result);
+console.log(x); // 10
+console.log(y); // 30 (because the third element is missing)
