@@ -1,9 +1,10 @@
-let a = ["JS", "Python"];
-let b = ["HTML", "CSS"];
+const fruits = ["apple", "banana", "cherry"];
 
-b = a;
-console.log(a);
-console.log(b);
-a.push("Go");
-console.log(a);
-console.log(b);
+fruits.forEach((fruit) => {
+  console.log(fruit.toUpperCase());
+});
+/**
+ * APPLE
+   BANANA
+   CHERRY
+ */
