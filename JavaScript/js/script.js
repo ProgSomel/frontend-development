@@ -1,9 +1,6 @@
-const language = {
-    name: "JavaScript",
-    year: 1995,
-    creator: "Brendon Eich"
+function sum(text, ...rest){
+    const result = rest.reduce((sum, cur)=> sum+cur, 0);
+    console.log(`${text} is ${result}`);
 }
 
-for(key in language){
-    console.log(language[key]);
-}
+sum("Sum: ", 5, 6, 8)
