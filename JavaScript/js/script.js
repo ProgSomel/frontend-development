@@ -1,10 +1,9 @@
-const fruits = ["apple", "banana", "cherry"];
+const language = {
+    name: "JavaScript",
+    year: 1995,
+    creator: "Brendon Eich"
+}
 
-fruits.forEach((fruit) => {
-  console.log(fruit.toUpperCase());
-});
-/**
- * APPLE
-   BANANA
-   CHERRY
- */
+for(key in language){
+    console.log(language[key]);
+}
