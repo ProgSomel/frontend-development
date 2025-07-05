@@ -1,6 +1,4 @@
-const result = NaN;
-if(!result){ //? if falsy
+const a = 6;
 
-}else{
-
-}
+const result = a%2 === 0 ? 'Even' : 'Odd';
+console.log(result);
