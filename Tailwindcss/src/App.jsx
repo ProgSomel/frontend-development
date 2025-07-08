@@ -13,17 +13,17 @@ export default function App() {
       ' src="../images/logo.png" alt="" />
       <div className='text-center space-y-2'>
         <div className='space-y-0.5'>
-          <p className='
-          text-lg text-black font-semibold
+          <h1 className='
+          text-black font-semibold
           dark:text-gray-300
-          '>Learn with Sumit</p>
+          '>Learn with Sumit</h1>
           <p 
           className='
           text-gray-500 font-medium
-          dark:text-gray-400
+          dark:text-gray-400 text-body
           '>Youtube Channel</p>
         </div>
-        <button className='btn btn-purple'>Visit Now</button>
+        <button className='btn btn-purple rounded-sm'>Visit Now</button>
         <button className='btn btn-green'>Website</button>
       </div>
      </div>
