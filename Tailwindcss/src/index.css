@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
-@variants hover, focus {
-  .rotate-0 {
-    transform: rotate(0deg);
-  }
+/* Input */
+@media screen(sm){
+  /* ... */
+}
+
+/* Output */
+@media (min-width: 640px){
+  /* ... */
 }

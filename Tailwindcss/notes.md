@@ -579,6 +579,113 @@ export default function App() {
 **---------------------------------------------------------------------------------------------------------------------------------------**
 
 # @variant Directive
+```css
+@import "tailwindcss";
+
+@variants hover, focus {
+  .rotate-0 {
+    transform: rotate(0deg);
+  }
+}
+```
+```html
+import React from 'react'
+
+export default function App() {
+  return (
+    <div className='hover:rotate-0'>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque possimus illo veritatis, voluptate id in expedita sapiente magni, aliquam quasi sed. Obcaecati, et? Culpa officiis, dicta neque omnis illum hic eveniet soluta voluptatum, cum explicabo velit, voluptates quos unde similique.
+    </div>
+  )
+}
+```
+
+**----------------------------------------------------------------------------------------------------------------------------------------**
+
+# @responsive and @screen Directives
+## @responsive
+```css
+@import "tailwindcss";
+
+@responsive{
+  .bg-gradient-brand{
+    background-image: linear-gradient(blue, green)
+  }
+}
+```
+```html
+import React from 'react'
+
+export default function App() {
+  return (
+    <div className='sm:bg-gradient-brand'>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque possimus illo veritatis, voluptate id in expedita sapiente magni, aliquam quasi sed. Obcaecati, et? Culpa officiis, dicta neque omnis illum hic eveniet soluta voluptatum, cum explicabo velit, voluptates quos unde similique.
+    </div>
+  )
+}
+```
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+## @screen
+```css
+@import "tailwindcss";
+
+@screen sm{
+  .bg-gradient-brand{
+    background-image: linear-gradient(blue, green)
+  }
+}
+```
+
+**-------------------------------------------------------------------------------------------------------------------------------------**
+
+ # theme() and screen() - Tailwind Functions
+ ## theme()
+ ```css
+ @import "tailwindcss";
+
+.content-area{
+  height: calc(100vh - theme('spacing.12'));
+}
+```
+-----------------------------------------------------------------------------------------------------------------------------------
+
+```css
+@import "tailwindcss";
+
+.content-area{
+  height: calc(100vh - theme('spacing[2.5]'));
+}
+```
+---------------------------------------------------------------------------------------------------------------------------------
+
+```css
+@import "tailwindcss";
+
+.content-area{
+  height: calc(100vh - theme('colors.blue.500'));
+}
+```
+
+## screen()
+```css
+@import "tailwindcss";
+
+/* Input */
+@media screen(sm){
+  /* ... */
+}
+
+/* Output */
+@media (min-width: 640px){
+  /* ... */
+}
+```
+
+ **-----------------------------------------------------------------------------------------------------------------------------------**
+
+# Tailwind Configurations - Advanced Concepts
 
 
 
