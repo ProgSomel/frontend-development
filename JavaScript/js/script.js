@@ -1,8 +1,12 @@
-//? select button
-const button = document.getElementById("btn");
+let a = ["JS", "Python"]
+let b = ["HTML", "CSS"]
 
-function hello() {
-    console.log("Hello World");
-}
+b = a;
 
-button.addEventListener("click", hello)
+console.log(a);
+console.log(b);
+
+a.push("Go")
+
+console.log(a);
+console.log(b);
