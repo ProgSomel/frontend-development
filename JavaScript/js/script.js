@@ -1,12 +1,9 @@
-let a = ["JS", "Python"]
-let b = ["HTML", "CSS"]
+const language = {
+    name: "JavaScript",
+    year: 1995,
+    creator: "Brendon Eich"
+}
 
-b = a;
-
-console.log(a);
-console.log(b);
-
-a.push("Go")
-
-console.log(a);
-console.log(b);
+for (key in language) {
+    console.log(language[key]);
+}
