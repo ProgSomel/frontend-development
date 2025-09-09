@@ -1,9 +1,6 @@
-const a = "popularity"
 
-const language = {
-    name: "JavaScript",
-    year: 1995,
-    creator: "Brendon Eich",
-    a //? we can use like this if key and value name are same
+function sum(...numbers) {
+    console.log(numbers);
 }
-console.log(language);
+
+sum(5, 6, 8);
