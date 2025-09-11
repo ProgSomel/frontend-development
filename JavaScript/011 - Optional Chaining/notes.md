@@ -1,3 +1,5 @@
+# 011 - Optional Chaining
+```javascript
 
 const user = {
     id: 339,
@@ -12,3 +14,7 @@ const user = {
 }
 
 console.log(user?.education?.school?.namet);
+```
+```bash
+undefined
+```
