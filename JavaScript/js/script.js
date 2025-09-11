@@ -1,6 +1,15 @@
 
-function sum(...numbers) {
-    console.log(numbers);
+const user = {
+    id: 339,
+    name: "Sumit",
+    age: 42,
+    education: {
+        degree: "Graduate",
+        school: {
+            name: "Rangpur Zilla School"
+        }
+    }
 }
 
-sum(5, 6, 8);
+const {education:{school:{name:naam}}={}} = user
+console.log(naam);
