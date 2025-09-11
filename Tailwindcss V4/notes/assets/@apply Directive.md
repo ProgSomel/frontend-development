@@ -1,3 +1,6 @@
+# 05 Composing Utilities with @apply Directive
+## index.css
+```javascript
 @import "tailwindcss";
 
 /* group Utilities */
@@ -13,3 +16,20 @@
 .btn-green {
   @apply border-green-200 text-green-600 hover:bg-green-600 focus:ring-green-600 dark:text-green-400;
 }
+```
+```html
+function App() {
+  return (
+    <>
+      <div class="flex flex-col gap-2 p-8 sm:flex-row sm:items-center sm:gap-6 sm:py-4 ...">
+        
+          <button class="btn btn-green ">
+            Message
+          </button>
+        </div>
+    </>
+  );
+}
+
+export default App;
+```
