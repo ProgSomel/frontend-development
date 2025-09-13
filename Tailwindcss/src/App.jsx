@@ -1,9 +1,13 @@
-import React from 'react'
+import Button from "./Button";
 
-export default function App() {
+function App() {
   return (
-    <div className='sm:bg-gradient-brand'>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque possimus illo veritatis, voluptate id in expedita sapiente magni, aliquam quasi sed. Obcaecati, et? Culpa officiis, dicta neque omnis illum hic eveniet soluta voluptatum, cum explicabo velit, voluptates quos unde similique.
-    </div>
-  )
+    <>
+      <div class="flex flex-col gap-2 p-8 sm:flex-row sm:items-center sm:gap-6 sm:py-4 ...">
+        <Button className="bg-green-500"></Button>
+      </div>
+    </>
+  );
 }
+
+export default App;

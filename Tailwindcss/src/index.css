@@ -1,11 +1,2 @@
 @import "tailwindcss";
 
-/* Input */
-@media screen(sm){
-  /* ... */
-}
-
-/* Output */
-@media (min-width: 640px){
-  /* ... */
-}
